@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"/Users/sharvyahmed/open-source/go-spec/.claude/hooks/go-spec/gs-statusline.js\""
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"/Users/sharvyahmed/open-source/go-spec/.claude/hooks/go-spec/gs-context-monitor.js\""
+          }
+        ]
+      }
+    ]
+  }
+}

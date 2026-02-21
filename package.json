@@ -1,0 +1,48 @@
+{
+  "name": "go-spec",
+  "version": "2.0.0",
+  "description": "Friction-free AI workflow for development teams",
+  "keywords": [
+    "claude",
+    "claude-code",
+    "ai",
+    "workflow",
+    "developer-tools",
+    "team",
+    "handoff",
+    "context-rot",
+    "context-engineering",
+    "productivity"
+  ],
+  "homepage": "https://github.com/sharvy/go-spec",
+  "bugs": {
+    "url": "https://github.com/sharvy/go-spec/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sharvy/go-spec.git"
+  },
+  "license": "MIT",
+  "author": "go-spec contributors",
+  "bin": {
+    "go-spec": "./bin/install.js"
+  },
+  "scripts": {
+    "test": "node tests/isNewer.test.js && node tests/parseArgs.test.js && node tests/contextMonitor.test.js",
+    "install-local": "node bin/install.js --claude --local",
+    "install-global": "node bin/install.js --claude --global",
+    "uninstall-global": "node bin/install.js --claude --global --uninstall"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "bin/",
+    "commands/",
+    "agents/",
+    "hooks/",
+    "templates/",
+    "scripts/"
+  ],
+  "devDependencies": {}
+}
